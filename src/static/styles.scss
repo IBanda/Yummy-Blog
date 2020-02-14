@@ -1,0 +1,124 @@
+    @import 'variables';
+    * {
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    /*
+* TOP NAV
+*/
+    
+    .topnav {
+        display: flex;
+        align-items: center;
+        min-height: 40px;
+        padding: 0px 15%;
+        font-size: .9rem;
+        border-bottom: 1px solid $secondary;
+        .row {
+            width: 100%;
+            margin: 0;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            display: inline-block;
+            margin-right: 2rem;
+            svg {
+                width: .8rem;
+                &:hover {
+                    color: $primary;
+                    cursor: pointer;
+                }
+            }
+        }
+        .account-section {
+            display: flex;
+            justify-content: flex-end;
+            a {
+                margin: 0px 1rem;
+                color: #000;
+                font-weight: 600;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            svg {
+                width: 1rem;
+                margin-left: 2rem;
+            }
+        }
+        @media (max-width:500px) {
+            padding: 0;
+            .top-social {
+                padding-right: 0;
+            }
+            li {
+                margin-right: 1rem;
+            }
+            .account-section {
+                padding-left: 0;
+                svg {
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+    /*
+    * LOGO SECTION
+    */
+    
+    .logo-section {
+        display: flex;
+        justify-content: center;
+        padding: 2% 0;
+        align-items: center;
+        a {
+            font-family: 'Shadows Into Light Two', cursive;
+            text-transform: capitalize;
+            text-decoration: none;
+            color: #000;
+            cursor: pointer;
+            h1 {
+                font-size: 5rem;
+            }
+            &:hover {
+                color: #000;
+                text-decoration: none;
+            }
+        }
+    }
+    /*
+    * BOTTOM NAV
+    */
+    
+    .bottomnav {
+        display: flex;
+        justify-content: center;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            display: inline-block;
+            margin: 0 2.5rem;
+            a {
+                color: #000;
+                text-transform: uppercase;
+                font-weight: 600;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+        .active {
+            color: $primary;
+        }
+    }

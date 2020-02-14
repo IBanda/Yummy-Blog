@@ -1,0 +1,118 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400; }
+
+/*
+* TOP NAV
+*/
+.topnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 40px;
+  padding: 0px 15%;
+  font-size: .9rem;
+  border-bottom: 1px solid #ddd; }
+  .topnav .row {
+    width: 100%;
+    margin: 0; }
+  .topnav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .topnav li {
+    display: inline-block;
+    margin-right: 2rem; }
+    .topnav li svg {
+      width: .8rem; }
+      .topnav li svg:hover {
+        color: #fc6c3f;
+        cursor: pointer; }
+  .topnav .account-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    .topnav .account-section a {
+      margin: 0px 1rem;
+      color: #000;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer; }
+    .topnav .account-section svg {
+      width: 1rem;
+      margin-left: 2rem; }
+  @media (max-width: 500px) {
+    .topnav {
+      padding: 0; }
+      .topnav .top-social {
+        padding-right: 0; }
+      .topnav li {
+        margin-right: 1rem; }
+      .topnav .account-section {
+        padding-left: 0; }
+        .topnav .account-section svg {
+          margin-left: 1rem; } }
+
+/*
+    * LOGO SECTION
+    */
+.logo-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 2% 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .logo-section a {
+    font-family: 'Shadows Into Light Two', cursive;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer; }
+    .logo-section a h1 {
+      font-size: 5rem; }
+    .logo-section a:hover {
+      color: #000;
+      text-decoration: none; }
+
+/*
+    * BOTTOM NAV
+    */
+.bottomnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .bottomnav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .bottomnav li {
+    display: inline-block;
+    margin: 0 2.5rem; }
+    .bottomnav li a {
+      color: #000;
+      text-transform: uppercase;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer; }
+  .bottomnav .active {
+    color: #fc6c3f; }
