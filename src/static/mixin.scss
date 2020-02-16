@@ -1,0 +1,15 @@
+    @mixin flexCenter ($val) {
+        @if $val==align {
+            display: flex;
+            align-items: center;
+        }
+        @else if $val==justify {
+            display: flex;
+            justify-content: center;
+        }
+        @else {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }

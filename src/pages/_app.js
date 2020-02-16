@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 import "../static/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../fontawesome";
@@ -14,9 +14,9 @@ class MyApp extends App {
   }
 }
 
-MyApp.PropTypes = {
-  Component: PropTypes.node.isRequired,
-  pageProps: PropTypes.object.toString
+MyApp.propTypes = {
+  Component: propTypes.func.isRequired,
+  pageProps: propTypes.object.isRequired
 };
 
 export default MyApp;

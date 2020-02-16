@@ -6,3 +6,4 @@ coverage/
 .vscode/
 .env
 .next
+prepros-6.config
