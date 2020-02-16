@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SocialIcons } from "../sharedcomponents";
 export default function TopNav() {
   return (
-    <section className="topnav" id="top-nav">
+    <div className="topnav">
       <div className="row">
         <div className="col-lg-5 col-5 top-social">
           <SocialIcons />
@@ -13,6 +13,6 @@ export default function TopNav() {
           <FontAwesomeIcon icon={"search"} />
         </div>
       </div>
-    </section>
+    </div>
   );
 }
