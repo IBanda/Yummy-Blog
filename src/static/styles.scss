@@ -10,6 +10,7 @@ body {
     font-size: 13px;
     font-weight: 400;
     overflow-x: hidden;
+    width: 100%;
 }
 
 
@@ -619,10 +620,9 @@ body {
     top: 0;
     left: 0;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: #fff;
     z-index: 500;
-    overflow: hidden;
     .loader {
         width: 30px;
         height: 30px;

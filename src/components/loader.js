@@ -1,9 +1,13 @@
 import React from "react";
 
-export default function Loader() {
-  return (
-    <div className="loader-wrapper">
-      <div className="loader"></div>
-    </div>
-  );
+export default class Loader extends React.Component {
+  componentDidMount() {}
+
+  render() {
+    return (
+      <div className="loader-wrapper">
+        <div className="loader"></div>
+      </div>
+    );
+  }
 }

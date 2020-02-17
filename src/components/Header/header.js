@@ -5,7 +5,7 @@ import BottomNav from "./bottomnav";
 
 export default function Header() {
   return (
-    <div className="">
+    <div>
       <TopNav />
       <Logo />
       <BottomNav />

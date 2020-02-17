@@ -7,7 +7,8 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: 400;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  width: 100%; }
 
 /*
 * TOP NAV
@@ -601,9 +602,9 @@ body {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-color: #fff;
-  overflow: hidden; }
+  z-index: 500; }
   .loader-wrapper .loader {
     width: 30px;
     height: 30px;
@@ -618,7 +619,7 @@ body {
     animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
-    overflow: hidden; }
+    z-index: 550; }
 
 @-webkit-keyframes loader {
   0% {
