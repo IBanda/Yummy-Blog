@@ -621,6 +621,7 @@ body {
     height: 100vh;
     width: 100%;
     background-color: #fff;
+    z-index: 500;
     overflow: hidden;
     .loader {
         width: 30px;
@@ -632,7 +633,7 @@ body {
         animation-duration: 1s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
-        overflow: hidden;
+        z-index: 550;
     }
     @keyframes loader {
         0% {
